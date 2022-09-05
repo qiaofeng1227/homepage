@@ -1,5 +1,5 @@
 module.exports = {
-    pathPrefix: "/homepage",
+    pathPrefix: "/",
     siteMetadata: {
       title: `Websoft9`,
       siteUrl: `https://www.websoft9.com`,
