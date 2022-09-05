@@ -17,9 +17,16 @@ const LegendArea = ({ title,data }) => {
                         <Heading as="h6" mb="37px" textAlign="left">
                             {data!=null ? title:null}
                         </Heading>
-                        
-                       {data && <Markdown> {data} </Markdown>}
 
+                       {/* {data!=null && <Markdown> {data} </Markdown>} */}
+
+                       {data!=null && 
+                        <Text
+                            fontSize="18px"
+                            mb="20px"
+                            dangerouslySetInnerHTML={{ __html:data }}
+                        />
+                        }
                     </Col>
                 </Row>
             </Container>
